@@ -11,7 +11,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 sia = SentimentIntensityAnalyzer()
 
 ### Import dataframe from the excel file
-df = pd.read_excel('/Users/cem_ataman/PycharmProjects/MadridDecidim-Data-Analysis/data/intermediate_data/selected_debate_comments.xlsx')
+df = pd.read_excel('/Users/cem_ataman/PycharmProjects/MadridDecidim-Data-Analysis/data/intermediate_data/selected_debate_comments_en.xlsx')
 df['body'] = df['body'].astype(str)
 
 # Define a function that takes a string and returns a dictionary of sentiment scores for that string
@@ -33,6 +33,6 @@ df['sentiment scores'] = compound_list # add the results as a new column
 
 # Select the useful columns and save the dataframe as an excel file
 # df_final = df.loc[:, ['comment_id', 'commentable_id', 'commentable_type', 'body', 'ancestry', 'sentiment scores']]
-df.to_excel('/Users/cem_ataman/PycharmProjects/MadridDecidim-Data-Analysis/data/intermediate_data/selected_debate_comments.xlsx', index=False)
+df.to_excel('/Users/cem_ataman/PycharmProjects/MadridDecidim-Data-Analysis/data/intermediate_data/selected_debate_comments_en.xlsx', index=False)
 
 
