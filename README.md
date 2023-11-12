@@ -1,4 +1,4 @@
-# DIPAS Hamburg Data Analysis
+# Decide Madrid Data Analysis
 
 The DIPAS dataset comprises textual data collected from a digital participation platform in Hamburg, Germany. 
 This platform serves as a venue for residents to engage in ongoing urban design and planning projects. 
